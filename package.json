@@ -6,6 +6,7 @@
   "scripts": {
     "01csv-parsing": "babel-node ./01_csv-parsing",
     "02xlsx-parsing": "babel-node ./02_xlsx-parsing",
+    "03csv-puppeteer": "babel-node ./03_csv-puppeteer",
     "05axios-cheerio": "babel-node ./05_axios-cheerio"
   },
   "author": "coffeemori",
@@ -19,6 +20,8 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "csv-parse": "^4.8.5",
+    "csv-stringify": "^5.3.6",
+    "puppeteer": "^2.1.0",
     "xlsx": "^0.15.5"
   },
   "devDependencies": {

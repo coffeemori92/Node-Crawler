@@ -12,13 +12,26 @@ const crawler = async () => {
     const browser = await puppeteer.launch({headless: process.env.NODE_ENV === 'production'});
     await Promise.all(records.map(async (e, i) => {
         const page = await browser.newPage();
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36');
         await page.goto(e[1]);
-        const scoreEl = await page.$('.score.score_left .star_score');
-        if(scoreEl){
-            const text = await page.evaluate(tag => tag.textContent.trim(), scoreEl);
+        // const 태그핸들러 = await page.$(선택자);
+        // const scoreEl = await page.$('.score.score_left .star_score');
+        // if(scoreEl){
+        //     const text = await page.evaluate(tag => tag.textContent.trim(), scoreEl);
+        //     console.log(e[0], '평점', text);
+        //     result[i] = [e[0], e[1], text];
+        // }
+        const text = await page.evaluate(() => {
+            const score = document.querySelector('.score.score_left .star_score');
+            if(score){
+                return score.textContent.trim();
+            }
+        });
+        if(text) {
             console.log(e[0], '평점', text);
             result[i] = [e[0], e[1], text];
         }
+        await page.waitFor(3000);
         await page.close();
     }));
     // const [page, page2, page3] = await Promise.all([

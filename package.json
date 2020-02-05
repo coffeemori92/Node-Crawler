@@ -7,7 +7,9 @@
     "01csv-parsing": "babel-node ./01_csv-parsing",
     "02xlsx-parsing": "babel-node ./02_xlsx-parsing",
     "03csv-puppeteer": "babel-node ./03_csv-puppeteer",
-    "05axios-cheerio": "babel-node ./05_axios-cheerio"
+    "04xlsx-puppeteer": "babel-node ./04_xlsx-puppeteer",
+    "05axios-cheerio": "babel-node ./05_axios-cheerio",
+    "06xlsx-image-screenshot": "babel-node ./06_xlsx-image-screenshot"
   },
   "author": "coffeemori",
   "license": "ISC",

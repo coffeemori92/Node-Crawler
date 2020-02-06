@@ -10,7 +10,8 @@
     "04xlsx-puppeteer": "babel-node ./04_xlsx-puppeteer",
     "05axios-cheerio": "babel-node ./05_axios-cheerio",
     "06xlsx-image-screenshot": "babel-node ./06_xlsx-image-screenshot",
-    "07image-scroll": "babel-node ./07_image-scroll"
+    "07image-scroll": "babel-node ./07_image-scroll",
+    "08facebook-login-logout": "babel-node ./08_facebook-login-logout"
   },
   "author": "coffeemori",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "cheerio": "^1.0.0-rc.3",
     "csv-parse": "^4.8.5",
     "csv-stringify": "^5.3.6",
+    "dotenv": "^8.2.0",
     "puppeteer": "^2.1.0",
     "xlsx": "^0.15.5"
   },

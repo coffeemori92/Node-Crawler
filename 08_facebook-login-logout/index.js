@@ -28,16 +28,12 @@ const crawler = async () => {
         await page.hover('#loginbutton');
         await page.waitFor(3000);
         await page.click('#loginbutton');
-        await page.waitForResponse(response => {
-            console.log(response.url());
-            return response.url().includes('login_attempt');
-        });
-        await page.waitFor(3000);
+        await page.waitFor(20000);
         await page.click('#userNavigationLabel');
-        await page.waitFor(10000);
+        await page.waitFor(20000);
         await page.click('li.navSubmenu:last-child');
-        // await page.close();
-        // await browser.close();
+        await page.close();
+        await browser.close();
     }catch(error){
         console.log(error);
     }

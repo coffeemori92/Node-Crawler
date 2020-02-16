@@ -4,3 +4,5 @@ package-lock.json
 06_xlsx-image-screenshot/poster
 06_xlsx-image-screenshot/screenshot
 07_image-scroll/imgs
+09_proxy-database/config
+10_facebook-crawling/config

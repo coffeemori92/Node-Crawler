@@ -11,7 +11,10 @@
     "05axios-cheerio": "babel-node ./05_axios-cheerio",
     "06xlsx-image-screenshot": "babel-node ./06_xlsx-image-screenshot",
     "07image-scroll": "babel-node ./07_image-scroll",
-    "08facebook-login-logout": "babel-node ./08_facebook-login-logout"
+    "08facebook-login-logout": "babel-node ./08_facebook-login-logout",
+    "09proxy-database": "babel-node ./09_proxy-database",
+    "10facebook-crawling": "babel-node ./10_facebook-crawling",
+    "10facebook-crawling-write": "babel-node ./10_facebook-crawling/write.js"
   },
   "author": "coffeemori",
   "license": "ISC",
@@ -26,7 +29,9 @@
     "csv-parse": "^4.8.5",
     "csv-stringify": "^5.3.6",
     "dotenv": "^8.2.0",
+    "mysql2": "^2.1.0",
     "puppeteer": "^2.1.0",
+    "sequelize": "^5.21.4",
     "xlsx": "^0.15.5"
   },
   "devDependencies": {

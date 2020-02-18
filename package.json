@@ -14,7 +14,10 @@
     "08facebook-login-logout": "babel-node ./08_facebook-login-logout",
     "09proxy-database": "babel-node ./09_proxy-database",
     "10facebook-crawling": "babel-node ./10_facebook-crawling",
-    "10facebook-crawling-write": "babel-node ./10_facebook-crawling/write.js"
+    "10facebook-crawling-write": "babel-node ./10_facebook-crawling/write.js",
+    "11instagram-crawling": "babel-node ./11_instagram-crawling",
+    "12youtube-crawling": "babel-node ./12_youtube-crawling",
+    "12youtube-crawling-check": "node ./12_youtube-crawling/check_availability.js"
   },
   "author": "coffeemori",
   "license": "ISC",
@@ -30,9 +33,10 @@
     "csv-stringify": "^5.3.6",
     "dotenv": "^8.2.0",
     "mysql2": "^2.1.0",
-    "puppeteer": "^2.1.0",
+    "puppeteer": "^2.1.1",
     "sequelize": "^5.21.4",
-    "xlsx": "^0.15.5"
+    "xlsx": "^0.15.5",
+    "ytdl-core": "^1.0.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

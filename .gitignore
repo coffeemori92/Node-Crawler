@@ -6,3 +6,4 @@ package-lock.json
 07_image-scroll/imgs
 09_proxy-database/config
 10_facebook-crawling/config
+11_instagram-crawling/config

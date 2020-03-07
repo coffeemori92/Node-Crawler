@@ -17,7 +17,10 @@
     "10facebook-crawling-write": "babel-node ./10_facebook-crawling/write.js",
     "11instagram-crawling": "babel-node ./11_instagram-crawling",
     "12youtube-crawling": "babel-node ./12_youtube-crawling",
-    "12youtube-crawling-check": "node ./12_youtube-crawling/check_availability.js"
+    "12youtube-crawling-check": "node ./12_youtube-crawling/check_availability.js",
+    "13amazon-pagination": "babel-node ./13_amazon-pagination",
+    "14github-pagination": "babel-node ./14_github-pagination",
+    "15twitter-iframe": "babel-node ./15_twitter-iframe"
   },
   "author": "coffeemori",
   "license": "ISC",
